@@ -3,31 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website cá nhân</title>
+    <title>Portfolio - LQK</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
+        html {
+            font-size: 20px;
+        }
         body {
-            font-family: Arial, sans-serif;
-            background: #f4f4f9;
-            text-align: center;
-            padding: 50px;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(120deg, #0f2027 0%, #2c5364 100%);
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #e0e6ed;
         }
         .card {
-            background: white;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            max-width: 500px;
-            margin: auto;
+            background: #182848;
+            padding: 40px 32px;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+            max-width: 420px;
+            width: 100%;
+            text-align: center;
         }
-        h1 { color: #333; }
-        p { color: #555; }
+        h1 {
+            color: #00aaff;
+            font-size: 2.4em;
+            margin-bottom: 0.3em;
+        }
+        p {
+            color: #bfc9d1;
+            font-size: 1.15em;
+            margin-bottom: 1em;
+        }
+        .avatar {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 18px;
+            border: 3px solid #2980b9;
+        }
+        .social {
+            margin-top: 18px;
+        }
+        .social a {
+            color: #e0e6ed;
+            margin: 0 10px;
+            font-size: 1.7em;
+            transition: color 0.2s;
+        }
+        .social a:hover {
+            color: #00aaff;
+        }
     </style>
 </head>
 <body>
     <div class="card">
-        <h1>Xin chào </h1>
-        <p>Mình là <b>LQK</b></p>
-        <p>Đây là website cá nhân của mình 🚀</p>
+        <img src="https://i.pravatar.cc/150?img=3" alt="Avatar" class="avatar">
+        <h1>Lê Quang Khải</h1>
+        <p>Student in Information Security | Specialized in Web Security 🚀</p>
+        <p>Hello! I'm Lê Quang Khải, a student majoring in Information Security, specialized in Web Security.<br>
+        My goal is to build modern and secure web products, and share knowledge with the community.</p>
+        <div class="social">
+            <a href="https://facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://github.com/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="mailto:your@email.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://linkedin.com/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://zalo.me/yourzaloid" target="_blank" title="Zalo"><i class="fas fa-comment-dots"></i></a>
+            <a href="tel:0907390169" title="Call"><i class="fas fa-phone"></i></a>
+        </div>
     </div>
 </body>
 </html>
