@@ -5,74 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LQK2042</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <style>
-        html {
-            font-size: 20px;
-        }
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background: linear-gradient(120deg, #0f2027 0%, #2c5364 100%);
-            min-height: 100vh;
-            margin: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #e0e6ed;
-        }
-        .card {
-            background: #182848;
-            padding: 40px 32px;
-            border-radius: 18px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.18);
-            max-width: 420px;
-            width: 100%;
-            text-align: center;
-        }
-        h1 {
-            color: #00aaff;
-            font-size: 2.4em;
-            margin-bottom: 0.3em;
-        }
-        p {
-            color: #bfc9d1;
-            font-size: 1.15em;
-            margin-bottom: 1em;
-        }
-        .avatar {
-            width: 90px;
-            height: 90px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 18px;
-            border: 3px solid #2980b9;
-        }
-        .social {
-            margin-top: 18px;
-        }
-        .social a {
-            color: #e0e6ed;
-            margin: 0 10px;
-            font-size: 1.7em;
-            transition: color 0.2s;
-        }
-        .social a:hover {
-            color: #00aaff;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="card">
-        <img src="https://downloadr2.apkmirror.com/wp-content/uploads/2024/09/05/66f6c4fb3ae97_com.asobimo.toramonline.png" alt="Avatar" class="avatar">
-        <h1>Lê Quang Khải</h1>
-        <p>Student in Information Security | Specialized in Web Security 🚀</p>
-        <div class="social">
-            <a href="https://www.facebook.com/wsd051810" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
-            <a href="https://github.com/LQK2042" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="mailto:lqk9029@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/le-quang-khai-466055363/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://zalo.me/0907390169" target="_blank" title="Zalo"><i class="fas fa-comment-dots"></i></a>
-            <a href="tel:0907390169" title="Call"><i class="fas fa-phone"></i></a>
+    <div class="profile-header">
+        <div class="profile-info">
+            <img src="https://downloadr2.apkmirror.com/wp-content/uploads/2024/09/05/66f6c4fb3ae97_com.asobimo.toramonline.png" alt="Avatar" class="avatar">
+            <h1>Lê Quang Khải</h1>
+            <p>Student in Information Security | Specialized in Web Security 🚀</p>
+            <div class="social">
+                <a href="https://www.facebook.com/wsd051810" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://github.com/LQK2042" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:lqk9029@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/le-quang-khai-466055363/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://zalo.me/0907390169" target="_blank" title="Zalo"><i class="fas fa-comment-dots"></i></a>
+                <a href="tel:0907390169" title="Call"><i class="fas fa-phone"></i></a>
+            </div>
         </div>
+    </div>
+    <div class="sections-grid">
+        <!-- About Me -->
+        <section class="about section-block">
+            <h2><i class="fas fa-user"></i> About Me</h2>
+            <p>Tôi là sinh viên chuyên ngành An toàn thông tin, đam mê bảo mật web và công nghệ mới. Luôn học hỏi, sáng tạo và hướng tới giải pháp an toàn cho mọi hệ thống.</p>
+            
+            <h3 style="color:#00aaff; margin-top:1em;"><i class="fas fa-road"></i> My Journey</h3>
+            <ul>
+                <li>2022: </li>
+                <li>2023: </li>
+                <li>2024: </li>
+                <li>2025: </li>
+            </ul>
+
+            <h3 style="color:#00aaff; margin-top:1em;"><i class="fas fa-heart"></i> Interests & Hobbies</h3>
+            <ul>
+                <li>Tham gia các cuộc thi CTF và Bug Bounty</li>
+                <li>Lập trình và phát triển công cụ bảo mật</li>
+                <li>Đọc sách công nghệ, bảo mật</li>
+                <li>Chơi game online</li>
+            </ul>
+        </section>
+        <!-- Skills & Expertise -->
+        <section class="skills section-block">
+            <h2><i class="fas fa-tools"></i> Skills & Expertise</h2>
+            
+            <div class="skill-subsection">
+                <h3 style="color:#00aaff; margin-top:1em;"><i class="fas fa-briefcase"></i> Experience Summary</h3>
+                <ul>
+                    <li>.</li>
+                    <li>Tham gia nhiều cuộc thi CTF nhóm và cá nhân</li>
+                    <li>.</li>
+                    <li>.</li>
+                </ul>
+            </div>
+
+            <div class="skill-subsection">
+                <h3 style="color:#00aaff; margin-top:1em;"><i class="fas fa-code"></i> Programming Languages</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>C/C++</li>
+                    <li>JavaScript</li>
+                    <li>HTML &amp; CSS</li>
+                    <li>Bash/Shell</li>
+                </ul>
+            </div>
+
+            <div class="skill-subsection">
+                <h3 style="color:#00aaff; margin-top:1em;"><i class="fas fa-user-friends"></i> Soft Skills</h3>
+                <ul>
+                    <li>Kỹ năng làm việc nhóm</li>
+                    <li>Giải quyết vấn đề</li>
+                    <li>Giao tiếp hiệu quả</li>
+                    <li>Tư duy phản biện</li>
+                    <li>Quản lý thời gian</li>
+                </ul>
+            </div>
+
+            <div class="skill-subsection">
+                <h3 style="color:#00aaff; margin-top:1em;"><i class="fas fa-microchip"></i> Technical Interests</h3>
+                <ul>
+                    <li>Bảo mật web và ứng dụng</li>
+                    <li>Phân tích lỗ hổng và khai thác</li>
+                    <li>.</li>
+                    <li>Cloud Security</li>
+                    <li>.</li>
+                </ul>
+            </div>
+
+            <ul>
+                <li><i class="fas fa-shield-alt"></i> Web Security (OWASP, Pentest)</li>
+                <li><i class="fab fa-html5"></i> HTML, CSS, JavaScript</li>
+                <li><i class="fab fa-python"></i> Python, C/C++</li>
+                <li><i class="fas fa-network-wired"></i> Linux, Networking</li>
+                <li><i class="fas fa-bug"></i> CTF & Bug Bounty</li>
+            </ul>
+        </section>
+        <!-- Projects & Work -->
+        <section class="projects section-block">
+            <h2><i class="fas fa-project-diagram"></i> Projects & Work</h2>
+            <ul>
+                <li><strong>Web Pentest Tool:</strong> Công cụ kiểm tra lỗ hổng web tự động.</li>
+                <li><strong>CTF Challenges:</strong> Tham gia và giải các thử thách bảo mật.</li>
+                <li><strong>Personal Blog:</strong> Chia sẻ kiến thức về bảo mật và lập trình.</li>
+            </ul>
+        </section>
+        <!-- Get In Touch -->
+        <section class="contact section-block">
+            <h2><i class="fas fa-envelope-open-text"></i> Get In Touch</h2>
+            <p>Nếu bạn muốn hợp tác hoặc trao đổi về bảo mật, hãy liên hệ qua email <a href="mailto:lqk9029@gmail.com">.</a> hoặc các mạng xã hội bên trên!</p>
+        </section>
     </div>
 </body>
 </html>
