@@ -1,0 +1,239 @@
+html {
+    font-size: 20px;
+}
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #0f2027 0%, #2c5364 100%);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: #e0e6ed;
+    padding: 0 0 40px 0;
+}
+.card {
+    background: #182848;
+    padding: 40px 32px;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    max-width: 100vw;
+    width: 100vw;
+    min-height: 100vh;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    color: #00aaff;
+    font-size: 2.4em;
+    margin-bottom: 0.3em;
+    text-align: center;
+}
+p {
+    color: #bfc9d1;
+    font-size: 1.15em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 32px auto 18px auto;
+    border: 3px solid #2980b9;
+    display: block;
+}
+.social {
+    margin-top: 18px;
+    text-align: center;
+}
+.social a {
+    color: #e0e6ed;
+    margin: 0 10px;
+    font-size: 1.7em;
+    transition: color 0.2s;
+}
+.social a:hover {
+    color: #00aaff;
+}
+/* Section styling */
+section {
+    margin-top: 28px;
+    padding: 18px 0 0 0;
+    border-top: 1px solid #243b55;
+    text-align: left;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section h2 {
+    color: #00aaff;
+    font-size: 1.35em;
+    margin-bottom: 0.6em;
+    letter-spacing: 1px;
+}
+
+section ul {
+    padding-left: 18px;
+    margin: 0;
+}
+
+section li {
+    margin-bottom: 0.5em;
+    color: #e0e6ed;
+    font-size: 1em;
+}
+
+section.about p,
+section.contact p {
+    color: #bfc9d1;
+    font-size: 1.08em;
+}
+
+section.projects strong {
+    color: #00aaff;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 18px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.profile-info {
+    flex: 1;
+    min-width: 220px;
+}
+.sections-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 18px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section-block {
+    background: #223a5f;
+    border-radius: 12px;
+    padding: 18px 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    min-width: 0;
+    min-height: 220px; /* Đặt chiều cao tối thiểu cho các section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section-block h2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 0.7em;
+}
+.section-block ul li i {
+    margin-right: 8px;
+    color: #00aaff;
+}
+.skill-subsection {
+    background: #1a2c47;
+    border-radius: 8px;
+    padding: 16px 14px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.07);
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skill-subsection h3 {
+    margin-top: 0;
+    margin-bottom: 0.7em;
+    font-size: 1.1em;
+    color: #00aaff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.skill-subsection ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.skill-subsection li {
+    margin-bottom: 0.4em;
+    color: #e0e6ed;
+    font-size: 1em;
+}
+
+@media (max-width: 600px) {
+    .avatar {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 12px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    .sections-grid {
+        gap: 12px;
+        grid-template-columns: 1fr;
+    }
+    .section-block {
+        padding: 12px 6px;
+        font-size: 0.98em;
+    }
+    section h2 {
+        font-size: 1.1em;
+    }
+    .profile-header {
+        gap: 6px;
+        flex-direction: column;
+    }
+}
+@media (max-width: 900px) {
+    .sections-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+    .profile-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+@media (min-width: 1200px) {
+    section, .profile-header, .sections-grid {
+        max-width: 1100px;
+    }
+    .sections-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        margin-top: 32px;
+    }
+    .section-block {
+        padding: 32px 28px;
+        font-size: 1.08em;
+    }
+    .profile-header {
+        gap: 40px;
+        margin-bottom: 32px;
+    }
+    h1 {
+        font-size: 2.8em;
+    }
+}
