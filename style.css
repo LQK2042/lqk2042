@@ -11,7 +11,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     color: #e0e6ed;
-    padding: 0 0 40px 0;
+    padding: 32px 0 40px 0; /* Thêm padding trên cho cân đối */
 }
 .card {
     background: #182848;
@@ -65,10 +65,11 @@ p {
 }
 /* Section styling */
 section {
-    margin-top: 28px;
-    padding: 18px 0 0 0;
-    border-top: 1px solid #243b55;
-    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 32px 0 0 0; /* Tăng padding trên cho mỗi section */
+    border-top: none;
+    text-align: center; /* Căn giữa nội dung section */
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
@@ -76,9 +77,11 @@ section {
 
 section h2 {
     color: #00aaff;
-    font-size: 1.35em;
-    margin-bottom: 0.6em;
-    letter-spacing: 1px;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.4em;
+    letter-spacing: 1.5px;
 }
 
 section ul {
@@ -120,11 +123,12 @@ section.projects strong {
 .sections-grid {
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    margin-top: 18px;
+    gap: 40px; /* Tăng khoảng cách giữa các section */
+    margin-top: 0;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+    align-items: center; /* Căn giữa các section */
 }
 .section-block {
     background: #223a5f;
@@ -136,6 +140,7 @@ section.projects strong {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center; /* Căn giữa nội dung trong khối */
 }
 .section-block h2 {
     display: flex;
@@ -180,6 +185,538 @@ section.projects strong {
     font-size: 1em;
 }
 
+.contact-flex {
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.personal-info, .contact-methods {
+    flex: 1 1 260px;
+    min-width: 220px;
+    background: #1a2c47;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    padding: 20px 18px;
+    margin: 0;
+    border: 2px solid #243b55;
+}
+
+.personal-info {
+    margin-right: 8px;
+}
+
+.contact-methods {
+    margin-left: 8px;
+}
+
+.contact-methods .social {
+    margin-bottom: 12px;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 16px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    background: #222b3a;
+    border-radius: 14px;
+    padding: 18px 20px;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.10);
+    gap: 18px;
+}
+
+.contact-item i {
+    font-size: 2em;
+    color: #7f8cff;
+    min-width: 40px;
+    text-align: center;
+}
+
+.contact-title {
+    display: block;
+    font-size: 1.08em;
+    color: #bfc9d1;
+    margin-bottom: 4px;
+}
+
+.contact-value {
+    display: block;
+    font-size: 1.18em;
+    color: #fff;
+    font-weight: bold;
+}
+
+.contact-value a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.contact-value a:hover {
+    color: #00aaff;
+}
+
+.contact-title-main {
+    color: #a78bfa;
+    font-size: 2em;      /* Giảm từ 2.5em xuống 2em */
+    font-weight: bold;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.contact-card {
+    background: #181f2a;
+    border-radius: 18px;
+    box-shadow: 0 2px 18px rgba(0,0,0,0.13);
+    padding: 32px 28px;
+    border: 1.5px solid #232a3a;
+    flex: 1 1 340px;
+    min-width: 260px;
+}
+
+.contact-card-title {
+    color: #fff;
+    font-size: 1.15em;   /* Giảm từ 1.35em xuống 1.15em */
+    font-weight: bold;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.connect-card {
+    background: #181f2a;
+    border-radius: 18px;
+    box-shadow: 0 2px 18px rgba(0,0,0,0.13);
+    padding: 32px 28px;
+    border: 1.5px solid #232a3a;
+    max-width: 700px;
+    margin: 32px auto 0 auto;
+}
+
+.connect-card h3 {
+    font-size: 1.15em;   /* Thêm dòng này để đồng bộ kích thước */
+}
+
+.connect-card p {
+    font-size: 1em;      /* Thêm dòng này để đồng bộ kích thước */
+}
+
+.connect-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #a78bfa;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.08em;
+    transition: background 0.2s, color 0.2s;
+}
+
+.connect-btn.github-btn {
+    background: #232a3a;
+    color: #fff;
+    border: 1.5px solid #a78bfa;
+}
+
+.connect-btn:hover {
+    background: #7f8cff;
+    color: #fff;
+}
+
+.connect-btn.github-btn:hover {
+    background: #a78bfa;
+    color: #232a3a;
+}
+
+/* Skills & Expertise Section */
+.skills-expertise-section {
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.skills-title {
+    color: #a78bfa;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    letter-spacing: 1px;
+}
+
+.skills-desc {
+    text-align: center;
+    color: #bfc9d1;
+    margin-bottom: 1.5em;
+    font-size: 1.08em;
+}
+
+.skills-grid {
+    display: flex;
+    gap: 32px;
+    justify-content: center; /* Căn giữa các khối kỹ năng */
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+
+.skills-card {
+    background: #181f2a;
+    border-radius: 18px;
+    box-shadow: 0 2px 18px rgba(0,0,0,0.13);
+    padding: 32px 28px;
+    border: 1.5px solid #232a3a;
+    flex: 1 1 300px;
+    min-width: 260px;
+    max-width: 340px;
+}
+
+.skills-card h3 {
+    color: #fff;
+    font-size: 1.18em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    letter-spacing: 1px;
+}
+
+.skill-bar-group {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.skill-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.skill-name {
+    color: #a78bfa;
+    font-weight: bold;
+    font-size: 1em;
+    display: inline-block;
+}
+
+.skill-name.cpp { color: #00ffae; }
+.skill-name.python { color: #7f8cff; }
+.skill-name.pascal { color: #bfc9d1; }
+.skill-name.oop { color: #a78bfa; }
+
+.skill-percent {
+    color: #bfc9d1;
+    font-size: 0.95em;
+    float: right;
+    margin-left: 8px;
+}
+
+.bar {
+    width: 100%;
+    height: 6px;
+    background: #232a3a;
+    border-radius: 4px;
+    margin-top: 2px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #a78bfa 0%, #7f8cff 100%);
+}
+
+.soft-skills-list {
+    list-style: disc inside;
+    color: #bfc9d1;
+    font-size: 1.08em;
+    margin: 0;
+    padding-left: 0;
+}
+
+.soft-skills-list li {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.tech-tags span {
+    background: #2d254c;
+    color: #a78bfa;
+    border-radius: 16px;
+    padding: 6px 16px;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.experience-summary-row {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    margin-top: 0.5em;
+    flex-wrap: wrap;
+}
+
+.exp-card {
+    background: #181f2a;
+    border-radius: 18px;
+    box-shadow: 0 2px 18px rgba(0,0,0,0.13);
+    padding: 28px 24px;
+    border: 1.5px solid #232a3a;
+    min-width: 220px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exp-main {
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0.2em;
+}
+
+.exp-main.exp-highlight {
+    color: #a78bfa;
+}
+
+.exp-desc {
+    color: #bfc9d1;
+    font-size: 1.08em;
+}
+
+.aboutme-section {
+    margin-top: 48px;
+    margin-bottom: 32px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.aboutme-title {
+    color: #a78bfa;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.2em;
+    letter-spacing: 1px;
+}
+
+.aboutme-desc {
+    text-align: center;
+    color: #bfc9d1;
+    margin-bottom: 2em;
+    font-size: 1.08em;
+}
+
+.aboutme-grid {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+
+.aboutme-journey {
+    flex: 1 1 340px;
+    min-width: 260px;
+    max-width: 500px;
+    text-align: left;
+}
+
+.aboutme-journey h3 {
+    color: #fff;
+    font-size: 1.18em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    letter-spacing: 1px;
+}
+
+.aboutme-journey p {
+    color: #bfc9d1;
+    font-size: 1.08em;
+    line-height: 1.7;
+}
+
+.aboutme-cards {
+    flex: 1 1 340px;
+    min-width: 260px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.aboutme-card {
+    display: flex;
+    align-items: center;
+    background: #181f2a;
+    border-radius: 14px;
+    padding: 18px 20px;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.10);
+    gap: 18px;
+    border: 1.5px solid #232a3a;
+}
+
+.aboutme-card i {
+    font-size: 2em;
+    color: #a78bfa;
+    min-width: 40px;
+    text-align: center;
+}
+
+.aboutme-card-title {
+    display: block;
+    font-size: 1.08em;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.aboutme-card-desc {
+    display: block;
+    font-size: 1em;
+    color: #bfc9d1;
+}
+
+.aboutme-hobbies-card {
+    background: #181f2a;
+    border-radius: 18px;
+    box-shadow: 0 2px 18px rgba(0,0,0,0.13);
+    padding: 28px 24px;
+    border: 1.5px solid #232a3a;
+    max-width: 900px;
+    margin: 32px auto 0 auto;
+    text-align: center;
+}
+
+.aboutme-hobbies-title {
+    color: #fff;
+    font-size: 1.18em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    letter-spacing: 1px;
+}
+
+.aboutme-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.aboutme-tags span {
+    background: #2d254c;
+    color: #a78bfa;
+    border-radius: 16px;
+    padding: 6px 16px;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.projects-group {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.projects-category {
+    background: none;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+}
+.projects-category-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 18px;
+}
+.projects-category-title {
+    color: #a78bfa;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-right: 12px;
+}
+.projects-category-desc {
+    color: #bfc9d1;
+    font-size: 1.08em;
+    margin-left: 12px;
+    font-weight: 500;
+}
+.projects-cards-row {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.project-card {
+    background: #181f2a;
+    border-radius: 18px;
+    box-shadow: 0 2px 18px rgba(0,0,0,0.13);
+    padding: 32px 28px;
+    border: 1.5px solid #232a3a;
+    min-width: 260px;
+    max-width: 340px;
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.project-title {
+    color: #fff;
+    font-size: 1.18em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    letter-spacing: 1px;
+}
+.project-desc {
+    color: #bfc9d1;
+    font-size: 1.08em;
+    margin-bottom: 0.5em;
+}
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 8px;
+}
+.project-tags span {
+    background: #2d254c;
+    color: #a78bfa;
+    border-radius: 16px;
+    padding: 6px 16px;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
 @media (max-width: 600px) {
     .avatar {
         width: 70px;
@@ -205,35 +742,176 @@ section.projects strong {
         flex-direction: column;
     }
 }
-@media (max-width: 900px) {
-    .sections-grid {
-        grid-template-columns: 1fr;
+@media (max-width: 800px) {
+    .contact-flex {
+        flex-direction: column;
         gap: 18px;
     }
-    .profile-header {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+    .personal-info, .contact-methods {
+        margin: 0;
     }
 }
-@media (min-width: 1200px) {
-    section, .profile-header, .sections-grid {
-        max-width: 1100px;
+@media (max-width: 900px) {
+    section h2,
+    .aboutme-title,
+    .skills-title,
+    .projects-category-title,
+    .contact-title-main {
+        font-size: 1.3em;
     }
-    .sections-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
-        margin-top: 32px;
+    .avatar {
+        width: 90px;
+        height: 90px;
     }
-    .section-block {
-        padding: 32px 28px;
-        font-size: 1.08em;
+    .profile-header h1 {
+        font-size: 1.4em;
     }
-    .profile-header {
-        gap: 40px;
-        margin-bottom: 32px;
+    .aboutme-card,
+    .skills-card,
+    .project-card,
+    .contact-card,
+    .connect-card,
+    .aboutme-hobbies-card,
+    .exp-card {
+        padding: 14px 8px;
     }
-    h1 {
-        font-size: 2.8em;
+}
+
+/* Section Title */
+section h2,
+.aboutme-title,
+.skills-title,
+.projects-category-title,
+.contact-title-main {
+    color: #00aaff;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.4em;
+    letter-spacing: 1.5px;
+}
+
+/* Section Description */
+.aboutme-desc,
+.skills-desc,
+.projects-category-desc,
+.project-desc,
+.contact-card-title,
+.connect-card p {
+    color: #bfc9d1;
+    font-size: 1.12em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* Card Style */
+.aboutme-card,
+.skills-card,
+.project-card,
+.contact-card,
+.connect-card,
+.aboutme-hobbies-card,
+.exp-card {
+    background: #182848;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+    border: 2px solid #00aaff;
+    padding: 28px 22px;
+    margin-bottom: 18px;
+}
+
+/* Card Title */
+.aboutme-card-title,
+.skills-card h3,
+.project-title,
+.contact-card-title,
+.aboutme-hobbies-title {
+    color: #00aaff;
+    font-size: 1.18em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    letter-spacing: 1px;
+}
+
+/* Tag Style */
+.project-tags span,
+.tech-tags span,
+.aboutme-tags span {
+    background: #223a5f;
+    color: #00aaff;
+    border-radius: 16px;
+    padding: 6px 16px;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border: 1px solid #00aaff;
+}
+
+/* Icon Color */
+.aboutme-card i,
+.projects-category-header i,
+.contact-item i {
+    color: #00aaff !important;
+}
+
+/* Avatar Responsive */
+.avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #00aaff;
+    margin-bottom: 18px;
+}
+
+/* Profile Header Name */
+.profile-header h1 {
+    color: #00aaff;
+    font-size: 2.4em;
+    font-weight: bold;
+    margin-bottom: 0.2em;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+    section h2,
+    .aboutme-title,
+    .skills-title,
+    .projects-category-title,
+    .contact-title-main {
+        font-size: 1.3em;
     }
+    .avatar {
+        width: 90px;
+        height: 90px;
+    }
+    .profile-header h1 {
+        font-size: 1.4em;
+    }
+    .aboutme-card,
+    .skills-card,
+    .project-card,
+    .contact-card,
+    .connect-card,
+    .aboutme-hobbies-card,
+    .exp-card {
+        padding: 14px 8px;
+    }
+}
+
+/* Section Block Padding */
+.section-block {
+    padding: 32px 24px;
+    border-radius: 18px;
+    background: #182848;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+    border: 2px solid #00aaff;
+}
+
+/* Projects Layout */
+.projects-cards-row {
+    gap: 24px;
+    justify-content: center;
 }
