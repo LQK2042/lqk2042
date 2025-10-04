@@ -21,17 +21,17 @@ const AboutSection = () => {
     {
       icon: Target,
       title: "Career Goal",
-      description: "Transitioning from Information Security to Software Developer"
+      description: "Transitioning from Information Security to Web Developer"
     }
   ];
 
   const hobbies = [
     "Manga & Anime",
-    "Chess (International & Chinese)",
-    "Genshin Impact",
+    "Teamfight Tactics",
+    "Honkai: Star Rail",
     "Valorant",
     "Competitive Programming",
-    "Object-Oriented Programming"
+    "CTF Challenges",
   ];
 
   return (

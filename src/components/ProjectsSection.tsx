@@ -1,36 +1,14 @@
-import { Folder, GitBranch, ExternalLink } from "lucide-react";
+import { Folder, ExternalLink } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const ProjectsSection = () => {
   const academicProjects = [
     {
-      title: "Data Structures & Algorithms",
-      description: "Implementation of various data structures and algorithms in C++",
-      tags: ["C++", "Algorithms", "Academic"]
-    },
-    {
-      title: "Object-Oriented Programming",
-      description: "Design patterns and OOP principles applied in real-world scenarios",
-      tags: ["OOP", "Design Patterns", "C++", "Academic"]
-    },
-    {
       title: "Web Development",
-      description: "Building responsive and secure websites using HTML, CSS, JavaScript, and modern frameworks.",
-      tags: ["HTML", "CSS"]
-    }
-  ];
-
-  const competitiveProjects = [
-    {
-      title: "Contest Solutions",
-      description: "Collection of algorithmic solutions from various programming contests",
-      tags: ["Algorithms", "Problem Solving", "C++", "Competition"]
-    },
-    {
-      title: "Data Structure Implementations",
-      description: "Optimized implementations for competitive programming",
-      tags: ["Data Structures", "Optimization", "C++", "Competition"]
+      description: "Building responsive and secure websites using HTML, CSS, JSP, and MySQL.",
+      tags: ["HTML", "CSS", "JSP", "MySQL"],
     }
   ];
 
@@ -53,10 +31,12 @@ const ProjectsSection = () => {
             </span>
           ))}
         </div>
-        <Button variant="outline" size="sm" className="group-hover:border-primary group-hover:text-primary transition-colors">
-          <ExternalLink className="w-4 h-4 mr-2" />
-          View Details
-        </Button>
+        <Link to="/web-development">
+          <Button variant="outline" size="sm" className="group-hover:border-primary group-hover:text-primary transition-colors">
+            <ExternalLink className="w-4 h-4 mr-2" />
+            View Details
+          </Button>
+        </Link>
       </CardContent>
     </Card>
   );
@@ -69,37 +49,21 @@ const ProjectsSection = () => {
             Projects & Work
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A collection of academic projects and competitive programming achievements
+            My web development projects
           </p>
         </div>
 
-        {/* Academic Projects */}
-        <div className="mb-16">
+        {/* Projects */}
+        <div>
           <div className="flex items-center gap-4 mb-8 animate-slide-up">
             <Folder className="w-8 h-8 text-primary" />
             <div>
               <h3 className="text-2xl font-bold text-foreground">Projects</h3>
-              <p className="text-muted-foreground">University coursework and group projects</p>
+              <p className="text-muted-foreground">Web development coursework and projects</p>
             </div>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {academicProjects.map((project, index) => (
-              <ProjectCard key={index} project={project} index={index} />
-            ))}
-          </div>
-        </div>
-
-        {/* Programming Competitions */}
-        <div>
-          <div className="flex items-center gap-4 mb-8 animate-slide-up">
-            <GitBranch className="w-8 h-8 text-primary" />
-            <div>
-              <h3 className="text-2xl font-bold text-foreground">Programming Competitions</h3>
-              <p className="text-muted-foreground">Competitive programming solutions and achievements</p>
-            </div>
-          </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            {competitiveProjects.map((project, index) => (
               <ProjectCard key={index} project={project} index={index} />
             ))}
           </div>
